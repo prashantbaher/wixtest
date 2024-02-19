@@ -1,0 +1,26 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+
+  <?define BuildVersion= 1.0.0.0 ?>
+  
+  <Package Name="!(loc.PackageName)" 
+           Manufacturer="!(loc.PackageManufacturer)" 
+           Version="$(var.BuildVersion)" 
+           Compressed="yes"
+           Scope="perMachine"
+           UpgradeCode="!(loc.PackageUpgradeCode)"
+           ProductCode="!(loc.PackageProductCode)">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <MediaTemplate EmbedCab="yes"/>
+
+    <Icon Id="icon.exe" SourceFile="$(WPF_Application.ProjectDir)\Images\logo.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="icon.exe" />
+    
+    <Property Id="ApplicationFolderName" Value="!(bind.Property.Manufacturer)" />
+    
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ApplicationComponents" />
+      <ComponentRef Id="ProgramMenuShortcutsComponent"/>
+    </Feature>
+  </Package>
+</Wix>

@@ -1,0 +1,6 @@
+D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\TestApplication.MSI.wixproj.CoreCompileInputs.cache
+D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\en-US\TestApplication.MSI.msi
+D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\en-US\TestApplication.MSI.wixpdb
+D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\TestApplication.MSI.wixproj.BindTracking-en-US.txt
+D:\Dev\TestMSIPackage\TestApplication.MSI\bin\x86\Debug\en-US\TestApplication.MSI.msi
+D:\Dev\TestMSIPackage\TestApplication.MSI\bin\x86\Debug\en-US\TestApplication.MSI.wixpdb

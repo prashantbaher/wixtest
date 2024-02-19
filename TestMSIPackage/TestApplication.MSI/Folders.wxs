@@ -1,0 +1,33 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER"
+                 Name="!(bind.Property.Manufacturer)" />
+    </StandardDirectory>
+
+    <Directory Id="ProgramMenuFolder">
+      <Directory Id="APPFOLDER" Name="!(bind.Property.Manufacturer)">
+        <Directory Id="Test" Name="Test">
+
+          <Component Id="ProgramMenuShortcutsComponent" Guid="{9E720242-ACC0-4BC8-A54F-CD4AD5494DFB}">
+            <!--<Shortcut Id="ProgramMenuIcon"
+              Directory="APPFOLDER" WorkingDirectory="INSTALLFOLDER" Icon="icon.exe"
+              Name="!(bind.Property.ProductName)">
+            </Shortcut>-->
+            <RegistryValue
+              Root="HKCU"
+              Key="Software\!(bind.Property.Manufacturer)\!(bind.Property.ProductName)"
+              Name="InstalledStartMenuShortcuts"
+              Type="integer"
+              Value="1" KeyPath="yes" />
+        
+            <RemoveFolder Id="CleanUp1" Directory="APPFOLDER" On="uninstall" />
+            <RemoveFolder Id="CleanUp2" Directory="Test" On="uninstall" />
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+
+  </Fragment>
+</Wix>

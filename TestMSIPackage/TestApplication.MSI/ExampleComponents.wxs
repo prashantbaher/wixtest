@@ -1,0 +1,19 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="ApplicationComponents" Directory="INSTALLFOLDER">
+      <Component Guid="{1940C26E-265C-4170-9441-0C2C75AC4380}">
+        <File Id="ApplicationFile" Source="WPF_Application.exe">
+          <Shortcut Id="DesktopShortCut"
+                            Directory="DesktopFolder"
+                            Advertise="yes" Icon="icon.exe"
+                            Name="!(bind.Property.ProductName)" />
+          <Shortcut Id="ProgramMenuIcon" Advertise="yes"
+              Directory="APPFOLDER" Subdirectory="Test" Icon="icon.exe" 
+              Name="!(bind.Property.ProductName)">
+          </Shortcut>
+        </File>
+        
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

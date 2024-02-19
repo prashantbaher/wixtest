@@ -1,0 +1,15 @@
+﻿<!--
+This file contains the declaration of all the localizable strings.
+-->
+<WixLocalization xmlns="http://wixtoolset.org/schemas/v4/wxl" Culture="en-US">
+
+  <String Id="DowngradeError" 
+          Value="A newer version of [ProductName] is already installed." />
+
+  <String Id="PackageName" Value="AA Application" />
+  <String Id="PackageManufacturer" Value="The CAD Coder" />
+  <String Id="PackageVersion" Value="1.0.0.0" />
+  <String Id="PackageUpgradeCode" Value="{58D55889-FFE4-4EA1-93FD-B8BA7F97EF22}" />
+  <String Id="PackageProductCode" Value="{9D0FA41D-30B6-4A5B-A3E2-E3FCB697E0C2}" />
+
+</WixLocalization>

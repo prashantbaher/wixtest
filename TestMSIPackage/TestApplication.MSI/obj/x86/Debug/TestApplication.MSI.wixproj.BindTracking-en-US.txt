@@ -1,0 +1,5 @@
+BuiltPdbOutput	D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\en-US\TestApplication.MSI.wixpdb
+BuiltTargetOutput	D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\en-US\TestApplication.MSI.msi
+Input	D:\Dev\TestMSIPackage\WPF_Application\bin\Debug\net6.0-windows\WPF_Application.exe
+Input	D:\Dev\TestMSIPackage\WPF_Application\\Images\logo.ico
+Intermediate	D:\Dev\TestMSIPackage\TestApplication.MSI\obj\x86\Debug\en-US\#cab1.cab
